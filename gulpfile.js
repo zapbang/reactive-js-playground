@@ -63,7 +63,7 @@ function initBundlerWatch(file) {
     }
 
     watcher.on("update", bundle);
-    watcher.on("time", time => console.log("Built client in ${time} ms"));
+    watcher.on("time", time => console.log(`Built client in ${time} ms`));
 
     bundle();
 }
