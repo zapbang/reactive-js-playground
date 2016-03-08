@@ -19,7 +19,7 @@ gulp.task("scripts:server", () => {
 
 gulp.task("watch:scripts:server", gulp.series(
     "scripts:server",
-    () => gulp.watch(".src-server/**/*.js", gulp.series("scripts:server"))));
+    () => gulp.watch("./src-server/**/*.js", gulp.series("scripts:server"))));
 
 gulp.task("watch:scripts:client", () => {
 
